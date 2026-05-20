@@ -110,7 +110,7 @@ def calculate_score():
     print(f"Total value of your loot: {diver['score']}")
     print(f"Current high score: {h.highScore}")
     if diver["score"] > int(h.highScore):
-        newHighScore(str(diver["score"]))
+        h.newHighScore(str(diver["score"]))
         print(f"New high score: {diver['score']}")
     else:
         print("better luck next time.")
